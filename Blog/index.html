@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的博客</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<style type="text/css">
+		    /*header*/
+			header { width: 100%; border-bottom: #cccccc 2px solid;height: 43px; margin-top:3px;}
+			header nav { margin: 0 auto; /*width: 1000px;*/ text-align: center; }
+			header nav img{width: 40px;float: left;}
+			#Blogger{margin:13px 0 0 5px;width: 110px;float: left;font-size: 25px;/*font-family: "仿宋" */;}
+			header nav ul{float: right;}
+			header nav ul li{float: left;width:80px;display: block;}
+			header nav ul li a{display: block;}
+			header nav ul li a span{display: block;}
+			header nav ul li a:hover .en{display: block;}
+			.en{display: none;color:#417e8a;font-size:12px;}
+			
+			/* footer */
+			footer { border-top: 9px solid #cccccc; background: #242221; width: 100%; padding-bottom: 10px;}
+			.footavatar { width: 700px; margin: auto; position: relative; color: #ffffff; /*font-family: "仿宋" */;}
+			.footavatar img{ height:110px}
+			.footphoto { position: absolute; top: -58px; left: 20px; display: block; border: #cccccc 5px solid; }
+			.footinfo { display: block; padding: 0 0 0 160px }
+			.fname { color: #fff; margin-top: 16px; font-size: 18px; line-height: 28px; }
+			.fname a { color: #fff; }
+			.finfo { line-height: 22px; }
+			.Copyright { text-align: center; color: #ffffff; /*font-family: "仿宋"*/ ;margin: 40px 0 0 }
+			.Copyright ul a { color: #286c5b; display: inline; /*padding: 0 10px; */}
+			.Copyright ul a:nth-child(-n+3) { border-right: #ffffff 1px solid; }
+			.Copyright ul a:hover { color: #fff; }
+			
+			/*mainContent*/
+			#mainContent{
+				height: 1200px;
+				margin: 0 auto; 
+				width: 1000px;
+				margin-top: 3px;
+			}
+			#leftSide{
+				
+				float: left;
+				width: 695px;
+				height: 850px;
+				border: 1px solid #ccc; 
+			}
+			#rightSide{
+			   float: left;
+			  /* margin-left: 3px;*/
+			   width: 300px;
+			   height: calc(100% - 300px)
+			   border: 1px solid #cccccc; 
+			}
+			
+			.contactStyle
+			{
+			  width:50px;	
+			  display: block;
+			  padding: 10px 25px;		
+			  float:left;	
+			}
+			.rightTitle{
+			  border-bottom: 1px solid #E6E6E6;
+			  font-size:18px ;
+			  line-height: 40px;
+			  padding-left:5px;
+			}
+			.avatar { margin: 20px auto; width: 160px; height: 160px; border-radius: 160px; -moz-border-radius: 160px; -webkit-border-radius: 160px; overflow: hidden; }
+			.avatar a { display: block; padding-top: 97px; width: 160px; height: 63px; background: url(img/s8.jpg) no-repeat; background-size: 160px 160px }
+			.avatar a span { display: block; margin-top: 63px; padding-top: 8px; width: 160px; height: 55px; text-align: center; font-size: 16px; line-height: 20px; color: #fff; background: rgba(0, 0, 0, .5);
+			-webkit-transition: margin-top .2s ease-in-out; -moz-transition: margin-top .2s ease-in-out; -o-transition: margin-top .2s ease-in-out; transition: margin-top .2s ease-in-out; }
+			.avatar a:hover span { display: block; margin-top: 0; }
+			#cloud li{
+				display: block;
+				float: left;
+				/*width:90px;
+				 * height: 22px;*/
+				padding:5px 8px;				
+				background: #FC9D9A;
+				margin: 5px;
+				border-radius: 3px;
+				text-align: center;
+			}
+			
+			@media only screen and (max-width: 1600px) {
+				header nav {width: 600px;}
+				
+				#mainContent{width: 600px;}
+			}
+			@media only screen and (max-width: 1920px) {
+				header nav {width: 1000px;}
+			}
+
+		</style>
+	</head>
+	<body>
+		
+		<header>		  
+		  <nav id="nav">	
+		  	<img src="img/树.svg" /><span id="Blogger">秋雨梧桐</span>
+		    <ul>
+		      <li><a href="/"><span>首页</span><span class="en">Home</span></a></li>
+		      <li><a href="/download/" target="_blank"><span>关于我</span><span class="en">About</span></a></li>
+		      <li><a href="/web/"  target="_blank"><span>博文</span><span class="en">Article</span></a></li>
+		      <li><a href="/jstt/" target="_blank"><span>心情</span><span class="en">Mood</span></a></li>
+		      <li><a href="/newshtml5/" target="_blank"><span>相册</span><span class="en">Photo</span></a></li>
+		      <li><a href="/news/case/" target="_blank"><span>留言</span><span class="en">Saying</span></a></li>		     
+		    </ul>		    
+		  </nav>
+		</header>
+		<div id="mainContent" >
+			<div id="leftSide"></div>
+			<div id="rightSide">
+				<div>
+					<div class="rightTitle">关注我</div>
+					<div class="avatar">
+				        <a href="#"><span>秋雨梧桐</span></a>
+				     </div>
+				      <p style="color:#417e8a;">于千万人之中，我遇见了我所遇见的人....</p>
+					<div>
+						<a href="/"><img src="img/qq.svg" class="contactStyle"/></a>
+						<a href="/"><img src="img/微博.svg" class="contactStyle"/></a>
+						<a href="/"><img src="img/邮箱.svg" class="contactStyle"/></a>
+					</div>
+				</div>
+				<div>
+					<div class="rightTitle">标签云</div>
+					<ul id="cloud">
+						<li><a href="#">个人博客</a></li>
+						<li><a href="#">个人博客</a></li>
+						<li><a href="#">个人博客</a></li>
+						<li><a href="#">个人博客</a></li>
+						<li><a href="#">个人博客</a></li>
+					</ul>
+				</div>
+				<div style="clear: both;">
+					<div class="rightTitle">图文推荐</div>
+				</div>
+				<div>
+					<div class="rightTitle">友情链接</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+		   <div class="footavatar">
+		     <img src="img/s8.jpg" class="footphoto">
+		     <ul class="footinfo">
+		       <p class="fname"><a href="/dancesmile" >秋雨梧桐</a>  </p>
+		       <p class="finfo">性别：女 年龄：25岁</p>
+		       <p>现居：四川成都</p></ul>
+		   </div>
+		  
+		   <div class="Copyright">
+		     <!--  
+		     <ul>
+		       <a href="/">帮助中心</a><a href="/">空间客服</a><a href="/">投诉中心</a><a href="/">空间协议</a>
+		     </ul>-->
+		     <p>Design by Qiuyuwutong</p>
+		    
+		   </div>
+		 </footer>	
+	</body>
+</html>
